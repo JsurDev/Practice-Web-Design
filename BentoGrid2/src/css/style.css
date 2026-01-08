@@ -17,6 +17,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  justify-content: center;
+  width: 90%; /*maximo para telefonos*/
+  max-width: 1000px; /*maximo para pc*/
+  margin: 0 auto; /*centrado automatico*/
+  /*El margin Auto , reparte todo en la derecha e izquierda*/
 }
 
 header {
@@ -71,5 +76,9 @@ header {
     height: 100%;
     border-radius: 5px;
     object-fit: cover;
+    transition: transform 0.5s ease;
+    &:hover {
+      transform: scale(1.1); /* Agranda la imagen un 10% */
+    }
   }
 }
